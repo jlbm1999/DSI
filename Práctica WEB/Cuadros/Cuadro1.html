@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Aquí aparecerá una foto en grande del cuadro, junto con información -->
+    <!-- La que sea técnica (medidas) quizá en forma de tabla, el resto en forma de texto -->
+
+    <title>Cuadro 1</title>
+    <nav>
+      <div class="cabecera">
+        <h1 class="cabecera_h1">COLECCIÓN 1 - CUADRO 1</h1>
+        <ul class="cabecera_ul">
+          <li><a href="../Home.html" class="cabecera_ul_l1">Inicio</a></li>
+          <li><a href="../Galería.html" class="cabecera_ul_l2">Galería</a></li>
+          <li><a href="../Sobre mi.html" class="cabecera_ul_l3">Sobre mi</a></li>
+          <li><a href='../Como pintar.html' class="cabecera_ul_l4">Cómo pintar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <!-- Imagen a la izquierda en el aside, con info (medidas) -->
+    <aside>
+      <div class="cuadro">
+        <a class="cuadro_a" title="Cuadro 1"><img src="Imágenes\Cuadro 1.jpg" width="175" height="175" ></a>
+        <p class="cuadro_p">Cuadro 1</p>
+        
+        <table class="cuadro_tabla">
+          <tr class="cuadro_tabla_r1">
+            <td class="cuadro_tabla_r1_c1">
+              <b>Alto</b>
+            </td>
+            <td class="cuadro_tabla_r1_c2">
+              <b>Ancho</b>
+            </td>
+            <td class="cuadro_tabla_r1_c3">
+              <b>Peso</b>
+            </td>
+            <td class="cuadro_tabla_r1_c4">
+              <b>Precio</b>
+            </td>
+          </tr>
+
+          <tr class="cuadro_tabla_r2">
+            <td class="cuadro_tabla_r2_c1">
+              <p>200 cm</p>
+            </td>
+            <td class="cuadro_tabla_r2_c2">
+              <p>150 cm</p>
+            </td>
+            <td class="cuadro_tabla_r2_c3">
+              <p>0,4 kg</p>
+            </td>
+            <td class="cuadro_tabla_r2_c4">
+              <p>20 €</p>
+            </td>
+          </tr>
+
+          <tr class="cuadro_tabla_r3">
+            <td class="cuadro_tabla_r3_c1">
+              <p>400 cm</p>
+            </td>
+            <td class="cuadro_tabla_r3_c2">
+              <p>300 cm</p>
+            </td>
+            <td class="cuadro_tabla_r3_c3">
+              <p>0,8 kg</p>
+            </td>
+            <td class="cuadro_tabla_r3_c4">
+              <p>35 €</p>
+            </td>
+          </tr>
+
+          <tr class="cuadro_tabla_r4">
+            <td class="cuadro_tabla_r4_c1">
+              <p>600 cm</p>
+            </td>
+            <td class="cuadro_tabla_r4_c2">
+              <p>450 cm</p>
+            </td>
+            <td class="cuadro_tabla_r4_c3">
+              <p>1,5 kg</p>
+            </td>
+            <td class="cuadro_tabla_r4_c4">
+              <p>42 €</p>
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+    </aside>
+    
+    <!-- A la derecha, info sobre el cuadro, lo que sea -->
+    <!-- Abajo, formulario para poner comentarios y comentarios ya existentes -->
+    
+    <section>
+        <article class="cuadro_info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a elementum diam. 
+          Vestibulum molestie commodo enim, in euismod magna imperdiet in. Vestibulum eu eros faucibus, sagittis nisi id, lacinia leo. 
+          Aenean non consectetur urna. Suspendisse laoreet, purus in venenatis mollis, dolor sem tristique sapien, a lacinia urna dolor sed diam. 
+          Suspendisse ultricies pellentesque ipsum rutrum porta. Phasellus porttitor libero in mi placerat interdum. Suspendisse potenti. 
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse commodo at felis sagittis mollis. 
+          Etiam velit lacus, rhoncus ac sem a, commodo ullamcorper mi. Vivamus rhoncus mauris orci. Suspendisse sit amet vestibulum sem, in dictum lorem.
+          Cras sed pulvinar tellus. Aenean risus dolor, rhoncus sit amet urna malesuada, rhoncus imperdiet metus. Nam sem ex, pulvinar ut leo ut, sodales semper nulla.
+        </article>
+    </section>
+
+    <!-- Debajo del cuadro, comentarios de otros usuarios y la posibilidad de poner uno nuevo -->
+
+    <section class="cuadro_nuevoComent">
+      <form class="cuadro_nuevoComent_form" action="/my-handling-form-page" method="post">
+        <ul class="cuadro_nuevoComent_form_ul">
+         <li>
+           <label class="cuadro_nuevoComent_form_ul_label_n" for="name">Nombre:</label>
+           <input class="cuadro_nuevoComent_form_ul_input_n" type="text" id="name" name="user_name">
+         </li>
+         <li>
+           <label class="cuadro_nuevoComent_form_ul_label_c" for="mail">Correo electrónico:</label>
+           <input class="cuadro_nuevoComent_form_ul_input_c" type="email" id="mail" name="user_mail">
+         </li>
+         <li>
+           <label class="cuadro_nuevoComent_form_ul_label_m" for="msg">Mensaje:</label>
+           <textarea class="cuadro_nuevoComent_form_ul_textarea_m" id="msg" name="user_message"></textarea>
+         </li>
+        </ul>
+       </form>
+    </section>
+
+    <div class="comentarios">
+      <h2 class="comentarios_h2">Comentarios</h2>
+      <div class="comentarios_c1">
+          <p class="comentarios_c1_p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a elementum diam. 
+            Vestibulum molestie commodo enim, in euismod magna imperdiet in. Vestibulum eu eros faucibus, sagittis nisi id, lacinia leo. 
+            Aenean non consectetur ulus. Aenean risus dolor, rhoncus sit amet urna malesuada, rhoncus imperdiet metus. Nam sem ex, pulvinar ut leo ut, sodales semper nulla.
+          </p>
+        </div class="comentarios_c2_p">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a elementum diam. 
+            Vestibulum molestie commodo enim, in euismod magna imperdiet in. Vestibulum eu eros faucibus, sagittis nisi id, lacinia leo. 
+            Aenean non consectetur ulus. Aenean risus dolor, rhoncus sit amet urna malesuada, rhoncus imperdiet metus. Nam sem ex, pulvinar ut leo ut, sodales semper nulla.
+          </p>
+        </div>
+    </div>
+
+    <footer>
+      <div class="">  <!-- Info de RRSS, contador de visitas, cosas de esas --> </div>
+    </footer>
+
+  </body>
+</html>
