@@ -20,6 +20,7 @@
   </head>
   <body>
     <!-- Imagen a la izquierda en el aside, con info (medidas) -->
+    <h1>Nombre Cuadro 1</h1>
     <aside>
       <div class="cuadro">
         <a class="cuadro_a" title="Cuadro 1"><img src="Imágenes\Cuadro 1.jpg" width="175" height="175" ></a>
@@ -112,16 +113,17 @@
         <ul class="cuadro_nuevoComent_form_ul">
          <li>
            <label class="cuadro_nuevoComent_form_ul_label_n" for="name">Nombre:</label>
-           <input class="cuadro_nuevoComent_form_ul_input_n" type="text" id="name" name="user_name">
+           <input class="cuadro_nuevoComent_form_ul_input_n" type="text" id="name" name="user_name" required="">
          </li>
          <li>
            <label class="cuadro_nuevoComent_form_ul_label_c" for="mail">Correo electrónico:</label>
-           <input class="cuadro_nuevoComent_form_ul_input_c" type="email" id="mail" name="user_mail">
+           <input class="cuadro_nuevoComent_form_ul_input_c" type="email" id="mail" name="user_mail" required="">
          </li>
          <li>
            <label class="cuadro_nuevoComent_form_ul_label_m" for="msg">Mensaje:</label>
            <textarea class="cuadro_nuevoComent_form_ul_textarea_m" id="msg" name="user_message"></textarea>
          </li>
+         <input class="cuadro_nuevoComent_form_ul_boton" type="button" value="Publicar">
         </ul>
        </form>
     </section>
