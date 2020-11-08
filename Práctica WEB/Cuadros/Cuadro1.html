@@ -2,6 +2,9 @@
 <html lang="es">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="General_estilos.css">
     <!-- Aquí aparecerá una foto en grande del cuadro, junto con información -->
     <!-- La que sea técnica (medidas) quizá en forma de tabla, el resto en forma de texto -->
 
@@ -9,18 +12,17 @@
     <nav>
       <div class="cabecera">
         <h1 class="cabecera_h1">COLECCIÓN 1 - CUADRO 1</h1>
-        <ul class="cabecera_ul">
-          <li><a href="../Home.html" class="cabecera_ul_l1">Inicio</a></li>
-          <li><a href="../Galería.html" class="cabecera_ul_l2">Galería</a></li>
-          <li><a href="../Sobre mi.html" class="cabecera_ul_l3">Sobre mi</a></li>
-          <li><a href='../Como pintar.html' class="cabecera_ul_l4">Cómo pintar</a></li>
-        </ul>
+        <div class="cabecera_ul">
+          <a class="cabecera_ul_l1" href="Home.html" >Inicio</a>
+          <a class="cabecera_ul_l2" href="Galería.html" >Galería</a>
+          <a class="cabecera_ul_l3" href="Sobre mi.html">Sobre mi</a>
+          <a class="cabecera_ul_l4"href='Como pintar.html'>Cómo pintar</a>
+        </div>
       </div>
     </nav>
   </head>
   <body>
     <!-- Imagen a la izquierda en el aside, con info (medidas) -->
-    <h1>Nombre Cuadro 1</h1>
     <aside>
       <div class="cuadro">
         <a class="cuadro_a" title="Cuadro 1"><img src="Imágenes\Cuadro 1.jpg" width="175" height="175" ></a>
@@ -113,17 +115,16 @@
         <ul class="cuadro_nuevoComent_form_ul">
          <li>
            <label class="cuadro_nuevoComent_form_ul_label_n" for="name">Nombre:</label>
-           <input class="cuadro_nuevoComent_form_ul_input_n" type="text" id="name" name="user_name" required="">
+           <input class="cuadro_nuevoComent_form_ul_input_n" type="text" id="name" name="user_name">
          </li>
          <li>
            <label class="cuadro_nuevoComent_form_ul_label_c" for="mail">Correo electrónico:</label>
-           <input class="cuadro_nuevoComent_form_ul_input_c" type="email" id="mail" name="user_mail" required="">
+           <input class="cuadro_nuevoComent_form_ul_input_c" type="email" id="mail" name="user_mail">
          </li>
          <li>
            <label class="cuadro_nuevoComent_form_ul_label_m" for="msg">Mensaje:</label>
            <textarea class="cuadro_nuevoComent_form_ul_textarea_m" id="msg" name="user_message"></textarea>
          </li>
-         <input class="cuadro_nuevoComent_form_ul_boton" type="button" value="Publicar">
         </ul>
        </form>
     </section>

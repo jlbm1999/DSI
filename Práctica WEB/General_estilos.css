@@ -1,0 +1,38 @@
+*{
+    /* Para el diseño responsive  */
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', 'Segoe UI';
+}
+
+nav{
+    margin: 0;
+    background-color: lightgrey;
+    position: sticky;
+    
+}
+
+.cabecera h1{
+    margin: 0;
+    padding: 7px;
+    color: black;
+}
+
+.cabecera_ul{
+    display: inline-block;
+    padding: 7px;
+    color: black;
+}
+
+.cabecera_ul a{
+    padding: 12px;
+    margin: 7px 7px;
+    text-decoration: none;
+    
+}
+
+.cabecera_ul a:hover{
+    background-color: white;
+    color: black;
+
+}
