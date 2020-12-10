@@ -1,33 +1,73 @@
 *{
     /* Para el diseño responsive  */
     margin: 0;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-family: 'Roboto', 'Segoe UI';
+    list-style: none;
 }
+
+/* CSS PARA LA NAVBAR */
 
 nav{
-    margin: 0;
-    background-color: lightgrey;
-    position: sticky;
-    
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
 }
 
-.cabecera h1{
+.cabecera{
+    font-size: 15px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    padding: 1em;
+    font-size: 140%;
+    top: 0;
+    transition: opacity .2s ease-in-out;
+    text-align: center;
+    z-index: 1;
+}
+
+.cabecera_inicio{
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    left: 0;
+    display: inline;
     margin: 0;
-    padding: 7px;
-    color: black;
+    padding: 0;
+    font-size: inherit;
+    justify-content: right;
+    text-decoration: none;
+    flex: content;
+    margin-left: 10%;
 }
 
 .cabecera_ul{
     display: inline-block;
-    padding: 7px;
-    color: black;
+    /* float: right; */
+    outline: none;
+    text-decoration: none;
+    opacity: .7;
+    padding: 0 .5em;
+    color: white;
+    transition: opacity .2s ease-in-out;
+
+    position: relative;
+    /* width: 100%; */
+
 }
 
 .cabecera_ul a{
     padding: 12px;
     margin: 7px 7px;
     text-decoration: none;
+    color: white;
     
 }
 
@@ -36,3 +76,65 @@ nav{
     color: black;
 
 }
+
+
+
+footer{
+    margin: 0;
+    height: 100px;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.f_container_body{
+    width: 100%;
+    min-width: 150px;
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.f_politicas{
+    margin: auto;
+    max-width: 341px;
+    margin: auto;
+}
+
+.f_redes_sociales{
+    margin: auto;
+}
+
+.f_contacto{
+    margin: auto;
+}
+
+.f_container_footer{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1100px){
+
+    .f_container_body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .f_redes_sociales{
+        /* margin-top: 10px; */
+    }
+
+    .f_contacto{
+        /* margin-top: 10px; */
+    }
+}
+
+
