@@ -5,7 +5,7 @@
 /* CSS PARA EL BANNER CON LA FOTO PRINCIPAL */
 
 .banner{
-    position: sticky;
+    /* position: sticky; */
     width: 100%;
     height: calc(112ch - 50px);
     background-size: cover;
@@ -71,7 +71,7 @@ body{
     grid-gap: 10px;
     width: 100%;
     
-}
+} 
 
 .colecciones_contenedor{
     position: relative;
@@ -84,6 +84,7 @@ body{
 }
 
 .colecciones_text{
+    /* display: none; */
     font-size: 30px;
     position: absolute;
     bottom: 0;
@@ -91,13 +92,15 @@ body{
     background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
     width: 100%;
     margin: 0;
+} 
 
+.colecciones_contenedor img:hover{
+    background-color: black;
+    opacity: 0.8;
 }
 
-/* WEB */
 @media screen and (min-width:1024px){
     .colecciones{
-        /* margin: out; */
         width: 100%;
         grid-template-columns: repeat(4, 1fr);
         grid-column: span 2;
@@ -113,12 +116,11 @@ body{
 
 }
 
-/* PIXEL 2 XL */
 @media screen and (max-width:411px){
     .colecciones{
         grid-template-columns: repeat(1, 1fr);
     }
 
-}
+} 
 
 

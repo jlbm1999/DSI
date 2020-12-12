@@ -1,140 +1,138 @@
 *{
-    /* Para el diseño responsive  */
     margin: 0;
-    /* font-size: 18px; */
+    padding: 0;
     font-family: 'Roboto', 'Segoe UI';
     list-style: none;
-}
+  }
 
 /* CSS PARA LA NAVBAR */
 
 nav{
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    margin-right: 15%;
-}
-
-.cabecera{
-    font-size: 15px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(22, 22, 22);
-    width: 100%;
-    padding: 1em;
-    font-size: 140%;
-    top: 0;
-    transition: opacity .2s ease-in-out;
-    text-align: center;
-    z-index: 1;
-}
-
-.cabecera_inicio{
-    font-weight: 800;
-    color: white;
-    position: absolute;
-    left: 0;
-    display: inline;
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
-    justify-content: right;
-    text-decoration: none;
-    flex: content;
-    margin-left: 10%;
-}
-
-.cabecera_ul{
-    display: inline-block;
-    /* float: right; */
-    outline: none;
-    text-decoration: none;
-    opacity: .7;
-    padding: 0 .5em;
-    color: white;
-    transition: opacity .2s ease-in-out;
-
-    position: relative;
+    height: 50px;
+    background: rgb(44, 44, 44);;
     /* width: 100%; */
+  }
 
-}
 
-.cabecera_ul a{
-    padding: 12px;
-    margin: 7px 7px;
-    text-decoration: none;
+.cabecera_logo{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    top: 8px;
+    left: 8%;
     color: white;
-    
-}
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 
-.cabecera_ul a:hover{
-    background-color: white;
-    color: black;
-
-}
-
-
+  .menu{
+    float: right;
+    margin-right: 25px;
+    list-style: none;
+  }
+  
+  .menu li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+  }
+  
+  .menu li a{
+    position: relative;
+    padding: 5px 0;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  label #sign-one,
+  label #sign-two{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #res-menu{
+    display: none;
+  }
+  
 
 footer{
-    margin: 0;
-    height: 100px;
+    width: 100%;
+    height: 150px;
+    color: white;
+    background-color: rgb(22, 22, 22);
     font-size: 20px;
-    padding: 0;
-    text-align: center;
+    margin-top: 20px;
+}
 
+.footer_container{
+    width: 100%;
 }
 
 .f_container_body{
-    width: 100%;
-    min-width: 150px;
     display: flex;
-    background-color: rgb(22, 22, 22);
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-}
-
-.f_politicas{
-    margin: auto;
-    max-width: 341px;
-    margin: auto;
-}
-
-.f_redes_sociales{
-    margin: auto;
-}
-
-.f_contacto{
-    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .f_container_footer{
-    width: 100%;
     font-size: 15px;
     color: white;
     background-color: black;
-    padding: 10px;
-}
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+} 
 
-@media screen and (max-width: 1100px){
+@media (max-width: 870px){
+    label #sign-one{
+      display: block;
+    }
+  
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(22,22,22);
+      top: 50px;
+      left: -100%;
+      text-align: center;
+      transition: .2s;
+      z-index: 10;
+    }
+  
+    .menu li{
+      display: block;
+      margin: 40px 0;
+      line-height: 30px;
+    }
+  
+    .menu li a{
+      font-size: 20px;
+    }
+  
+    #res-menu:checked ~ .menu{
+      left: 0;
+    }
+  
+    #res-menu:checked ~ label #sign-one {
+      display: none;
+    }
+    #res-menu:checked ~ label #sign-two {
+      display: block;
+    }
 
     .f_container_body{
-        flex-wrap: wrap;
-        justify-content: center;
+        font-size: 15px;
     }
 
-    .f_redes_sociales{
-        /* margin-top: 10px; */
-    }
-
-    .f_contacto{
-        /* margin-top: 10px; */
-    }
-}
+  }
 
 

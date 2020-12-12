@@ -1,0 +1,60 @@
+
+.banner{
+    width: 100%;
+    height: calc(50ch - 50px);
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url('Imágenes/Cuadro 1.jpg');
+    background-attachment: scroll;
+}
+
+body{
+    display: block;
+}
+
+aside{
+    float: left;
+}
+
+.producto{
+    border: 2px solid black;
+    margin-bottom: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuadro{
+    margin-left: 55%;
+    min-width: 200px;
+    border: 2px solid black;
+}
+
+.cuadro_p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cuadro_tabla{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cuadro_titulo{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.cuadro_info{
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 10%;
+}
+
+.comentarios{
+    
+    border: 2px solid black;
+}
